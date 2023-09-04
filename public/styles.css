@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 650px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.users-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the user cards */
+    margin-bottom: 20px; /* Space between the user cards and the progress bar */
+}
+
+.user {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 250px;  /* Fixed width */
+    height: 350px; /* Fixed height */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #666;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 span {
+    display: block;
+    font-size: 16px;
+    color: #777;
+    margin-top: 5px;
+}
+
+h1, h2, .user h2 {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.user:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 20px; /* Makes both edges round */
+    margin: 0 auto 40px; /* Center the progress bar */
+    overflow: visible;
+}
+
+.progress-track {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #4caf50;
+    width: 0%; 
+    z-index: 1;
+}
+
+.progress-user {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 30px; /* Reduced size */
+    height: 30px; /* Reduced size */
+    border-radius: 50%;
+    transition: left 0.3s ease;
+    z-index: 2;
+}
+
+.progress-user img {
+    width: 50px; /* Reduced size */
+    height: 50px; /* Reduced size */
+    object-fit: cover;
+}
+
+.target {
+    position: absolute;
+    right: -140px; /* Adjust this value to position the target closer to the end of therogress bar */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #555;
+    padding: 5px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center; /* Vertically centers the logo and the title */
+    gap: 10px; /* Space between the logo and the title */
+}
+
+#twitter-logo {
+    width: 50px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
