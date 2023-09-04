@@ -2,7 +2,7 @@ const express = require('express');
 const Twitter = require('twitter');
 
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 const client = new Twitter({
   consumer_key: process.env.TWITTER_CONSUMER_KEY,
@@ -37,6 +37,6 @@ app.get('/getFollowerCount', async (req, res) => {
   }
 });
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
