@@ -38,5 +38,5 @@ app.get('/getFollowerCount', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${port}`);
+  console.log(`Server running at http://localhost:${PORT}`);
 });
